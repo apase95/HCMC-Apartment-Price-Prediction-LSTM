@@ -1,4 +1,4 @@
-# 📈 HCMC Real Estate Price Prediction (Bi-LSTM)
+# 📈 HCMC Apartment Price Prediction (Bi-LSTM)
 
 Welcome to my project! This repository contains a Deep Learning model designed to predict real estate prices in **Ho Chi Minh City (HCMC)** based on historical data.
 
