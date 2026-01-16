@@ -1,4 +1,8 @@
 # 📈 HCMC Apartment Price Prediction (Bi-LSTM)
+![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=flat-square&logo=PyTorch&logoColor=white)
+![pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=flat-square&logo=pandas&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=flat-square&logo=scikit-learn&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=flat-square&logo=Matplotlib&logoColor=black)
 
 Welcome to my project! This repository contains a Deep Learning model designed to predict real estate prices in **Ho Chi Minh City (HCMC)** based on historical data.
 
@@ -11,8 +15,8 @@ I have upgraded the standard LSTM model to a **Bi-LSTM (Bidirectional Long Short
 ### Why Bi-LSTM?
 - **Standard LSTM:** Only learns from the past to the future (Forward).
 - **Bi-LSTM:** Learns in two directions at the same time:
-  - Forward (Past $\to$ Future)
-  - Backward (Future $\to$ Past)
+- **Forward** (Past $\to$ Future)
+- **Backward** (Future $\to$ Past)
 
 This allows the model to understand the context of the price trends much better than a basic LSTM.
 
@@ -20,19 +24,19 @@ This allows the model to understand the context of the price trends much better 
 ## 📂 Repository Structure
 
 ### 1. Source Code 💻
-- **main.py:** The main file. It runs the training loop, evaluates the model, and plots the results.
-- **lstm_model.py:** Contains the BiLSTMModel class (The neural network architecture).
-- **data_loader.py:** Handles data preprocessing, normalization (MinMaxScaling), and creating time-series sequences.
-- **generate_data.py:** Helper script to process or generate dataset samples.
+- `main.py:` The main file. It runs the training loop, evaluates the model, and plots the results.
+- `lstm_model.py:` Contains the BiLSTMModel class (The neural network architecture).
+- `data_loader.py:` Handles data preprocessing, normalization (MinMaxScaling), and creating time-series sequences.
+- `generate_data.py:` Helper script to process or generate dataset samples.
 
 ### 2. Datasets 📊
-- **Dataset_BDS_HCM_Merged.csv:** The main dataset containing real estate prices in Ho Chi Minh City.
-- **Dataset_BDS_HCM_Diff.csv:** Processed data (difference transformation) to make the time series stationary.
-- **Dataset_GCC_HCM_2015_2025.csv:** Additional economic/construction data for the period 2015-2025.
+- `Dataset_BDS_HCM_Merged.csv:` The main dataset containing real estate prices in Ho Chi Minh City.
+- `Dataset_BDS_HCM_Diff.csv:` Processed data (difference transformation) to make the time series stationary.
+- `Dataset_GCC_HCM_2015_2025.csv:` Additional economic/construction data for the period 2015-2025.
 
 --- --- 
 ## 🛠️ Model Architecture
-The model in **lstm_model.py** is built using PyTorch:
+The model in `lstm_model.py` is built using PyTorch:
 ```python
 def step2_build_model(self):
         self.model = Sequential()
@@ -68,4 +72,4 @@ python main.py
 - Teammate: Ho Dang Thai Duy, Le Minh Hoang, Tran Duc Anh, Tran Xuan An, Nong Hoang Anh
 
 --- ---
-### Thanks for checking out us project! 🌟
+## 🌟 Thanks for checking out us project!
